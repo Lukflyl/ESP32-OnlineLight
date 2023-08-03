@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RGB Controls</title>
+    <script src="index.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <h1 class="heading">RGB Controls</h1>
+    <div class="slidecontainer">
+      <input
+        type="range"
+        min="0"
+        max="255"
+        step="15"
+        value="0"
+        class="slider"
+        id="redSlider"
+        style="background: #ff7276"
+        oninput="sendValues()"
+        onchange="sendValues()"
+      />
+    </div>
+    <div class="slidecontainer">
+      <input
+        type="range"
+        min="0"
+        max="255"
+        step="15"
+        value="0"
+        class="slider"
+        id="greenSlider"
+        style="background: #90ee90"
+        oninput="sendValues()"
+        onchange="sendValues()"
+      />
+    </div>
+    <div class="slidecontainer">
+      <input
+        type="range"
+        min="0"
+        max="255"
+        step="15"
+        value="0"
+        class="slider"
+        id="blueSlider"
+        style="background: #89cff0"
+        oninput="sendValues()"
+        onchange="sendValues()"
+      />
+    </div>
+    <p class="info info-offline" id="info">Not connected to the server :(</p>
+  </body>
+</html>
